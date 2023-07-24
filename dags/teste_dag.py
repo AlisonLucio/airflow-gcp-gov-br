@@ -10,14 +10,14 @@ default_args = {
         'retry_delay': timedelta(seconds=120),
         'wait_for_downstream': False,
         'depends_on_past': True,
-    },
+    }
 
 with DAG(
     dag_id='teste-dag-composer',
     default_args= default_args,
     schedule_interval= '00 08 1-31 1-12 *',
     catchup= True,
-    tags= 'teste',
+    tags= ['teste'],
 ) as dag:
     
     dag_init = DummyOperator(task_id='dag_init', dag=dag)
