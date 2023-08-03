@@ -103,7 +103,8 @@ TASK_CONFIG = {
                 'task_id':f'incoming_delete_cluster_{TABLE}',
                 'project_id':PROJECT_ID,
                 'region':LOCATION,
-                'cluster_name':CLUSTER_NAME_INCOMING
+                'cluster_name':CLUSTER_NAME_INCOMING,
+                'gcp_conn_id':GCP_CONN_ID
             },
         },
         'RAW_TO_TRUSTED':{
