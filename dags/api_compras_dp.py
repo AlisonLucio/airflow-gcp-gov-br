@@ -88,6 +88,7 @@ with DAG(
             project_id=task_config['DATAPROC_CONFIG']['INCOMING_TO_RAW']['DELETE_CLUSTER']['project_id'],
             cluster_name=task_config['DATAPROC_CONFIG']['INCOMING_TO_RAW']['DELETE_CLUSTER']['cluster_name'],
             region=task_config['DATAPROC_CONFIG']['INCOMING_TO_RAW']['DELETE_CLUSTER']['region'],
+            gcp_conn_id= task_config['DATAPROC_CONFIG']['INCOMING_TO_RAW']['DELETE_CLUSTER']['gcp_conn_id'],
             dag=dag
             )   
 
