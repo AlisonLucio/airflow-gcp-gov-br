@@ -15,7 +15,6 @@ from airflow.providers.google.cloud.operators.dataproc import (
     DataprocSubmitJobOperator
     )
 from airflow.utils.task_group import TaskGroup
-import json
 
 
 dag_conf= CALL_API_GOV['DAG_CONFIG']
