@@ -16,13 +16,14 @@ path_dl = PathsDataLake(change_file_type='csv', change_table_name=TABLE, change_
 
 # ----------------------------------------------------------------------------
 
-# ----------------------------------------------------------------------------
-cluster_config = 'medium'
+# tamanho do cluster de dataproc, temos 3 tamanhos e eles podem ser vistos no arquivo 
+# airflow-gcp-gov-br/dags/helpers/utils/dataproc/dataproc_config.py
+cluster_config = 'large'
 
 # ----------------------------------------------------------------------------
 
 
-# constantes com endereços utilizados para a tabela api_fornecedores
+# constantes com endereços utilizados para a tabela api_servicos_orgaos
 PATH_SAVE_FILE_TABLE_INCOMING=path_dl.change_file_path(change_layer=DATASET_ID_INCOMING)
 PATH_SAVE_FILE_TABLE_RAW=path_dl.change_file_path(change_layer=DATASET_ID_RAW)
 PATH_SAVE_FILE_TABLE_TRUSTED=path_dl.change_file_path(change_layer=DATASET_ID_TRUSTED)
@@ -41,7 +42,7 @@ URI_TABLE    = 'http://compras.dados.gov.br/servicos/v1/servicos.csv'
 
 # ----------------------------------------------------------------------------
 
-# configurações para o operador bigquery
+# quais colunas serão usadas para a clusterização da tabela no bigquery
 CLUSTER_FIELDS = 'grupo', 'subclasse'
 
 # ----------------------------------------------------------------------------
