@@ -1,3 +1,10 @@
 # airflow-gcp-gov-br
-Projeto de aprendizado de pipeline para usar dados abertos do governo brasileiro. 
-A Cloud utilizada será o Google Cloud Platform
+
+<p>Escrevi uma playlist de tutoriais sobre engenharia de dados no GCP utilizando o Cloud Build para fazer o CI/CD.  
+Até agora são 10 tutoriais, o código deste repositório é usado nos tutoriais.</p> 
+
+[Link do início da playlist dos tutoriais](https://medium.com/@alisonluciosantos/engenharia-de-dados-com-gcp-e-ci-cd-parte-1-vis%C3%A3o-geral-do-projeto-7d18d206a8a9)
+
+
+<p>Este repositório é para o versionamento do código das DAGs do Airflow que vão executar as tarefas que constituem o pipeline de dados.
+</p>
